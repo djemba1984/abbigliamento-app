@@ -1,1 +1,21 @@
+{
+  "name": "Abbigliamento App",
+  "short_name": "Abbigliamento",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": #0f172a",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "icona-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icona-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
 
