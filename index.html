@@ -1,13 +1,18 @@
-html
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Abbigliamento App</title>
-      <!-- Favicon standard -->
-  <link rel="icon" type="image/png" href="./favicon.png">
-  <link rel="manifest" href="manifest.json">
+  
+  <!-- Favicon Standard e Apple Link espliciti per PWA con Iframe -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <!-- Collegamento al Manifest -->
+  <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+  
   <style>
     body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #0f172a; }
     iframe { width: 100%; height: 100%; border: none; }
@@ -19,7 +24,7 @@ html
   <!-- Bottone galleggiante di installazione -->
   <button id="installBtn">📲 Installa App</button>
 
-  <!-- Sostituisci questo URL con il tuo link /exec di Google Apps Script ottenuto nel Passo 1 -->
+  <!-- URL Google Apps Script -->
   <iframe src="https://script.google.com/a/macros/eurotranciatura.it/s/AKfycbzfDYvlmtqAiFnD9XzT6PLDvenUkUYfJ2jeO5pjX2A8sYo22moPqQhJxqui74b_TX49/exec"></iframe>
 
   <script>
